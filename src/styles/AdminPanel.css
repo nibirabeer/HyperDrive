@@ -1,0 +1,84 @@
+/* AdminPanel.css */
+
+/* General styles for the admin panel */
+.admin-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: "Saira", sans-serif;
+  padding: 20px;
+}
+
+/* Content wrapper for centering */
+.content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Heading */
+.admin-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Toggle buttons container */
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Toggle button styles */
+.toggle-btn {
+  background-color: #5d5d5d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #000000;
+}
+
+/* Active button style */
+.toggle-btn.active {
+  background-color: #000000;
+}
+
+.toggle-btn.active:hover {
+  background-color: #5d5d5d;
+  color: #ffffff;
+}
+
+/* Styles for the components rendered inside the admin panel */
+.user-management,
+.cars-management,
+.booking-management {
+  margin-top: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .toggle-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toggle-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,154 @@
+/* LoggedNavbar.css */
+.logged-navbar-unique {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px; /* Padding for top and bottom */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Saira", sans-serif;
+}
+
+.logged-navbar-container-unique {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0; /* Padding for top and bottom */
+}
+
+.logged-navbar-logo-unique {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.logged-navbar-logo-unique img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logged-navbar-logo-unique h1 {
+  color: #000000;
+  letter-spacing: 1px;
+  font-weight: 300; /* Makes the font lighter */
+}
+
+.logged-navbar-menu-unique {
+  display: flex;
+  align-items: center;
+}
+
+.logged-navbar-links-unique {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; /* Removed padding-top */
+  align-items: center; /* Ensure items are vertically centered */
+}
+
+.logged-navbar-links-unique li {
+  margin-left: 20px;
+}
+
+.logged-navbar-link-unique {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.logged-navbar-link-unique.active {
+  background-color: #ffffff;
+  color: #ff4a00;
+}
+
+.logged-navbar-link-unique:hover {
+  background-color: #ffffff;
+  color: #ff4a00;
+}
+
+.logged-navbar-profile-unique {
+  position: relative;
+}
+
+.logged-navbar-profile-img-unique {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logged-navbar-profile-img-unique:hover {
+  transform: scale(1.1);
+}
+
+.logged-navbar-dropdown-unique {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  width: 180px;
+}
+
+/* Reduce the gap between dropdown items */
+.logged-navbar-dropdown-unique li {
+  margin: 4px 0; /* Reduced margin */
+}
+
+.logged-navbar-dropdown-unique .logged-navbar-link-unique {
+  display: block;
+  padding: 8px;
+  color: #000000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.logged-navbar-dropdown-unique .logged-navbar-link-unique:hover {
+  background-color: #f0f0f0;
+  color: #ff4a00;
+}
+
+.logged-navbar-dropdown-unique button {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.logged-navbar-dropdown-unique button:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+.logged-navbar-dropdown-text {
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  background: #000000;
+  border-radius: 8px;
+}
+
+.logged-navbar-dropdown-text strong {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 8px;
+}

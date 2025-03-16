@@ -1,0 +1,226 @@
+/* Footer Styling */
+.footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-family: "Saira", sans-serif;
+  border-radius: 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo {
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.footer-description {
+  font-size: 0.9rem;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  color: #ff4a00;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ff4a00;
+}
+
+.footer-social {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-social li {
+  margin: 8px 0;
+}
+
+.footer-social a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #ff4a00;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* Contact Us Button */
+.footer-link-button {
+  background: none;
+  border: none;
+  color: #ddd; /* Match social media button color */
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  transition: color 0.3s ease;
+  font-family: "Saira", sans-serif; /* Match footer font */
+}
+
+.footer-link-button:hover {
+  color: #ff4a00; /* Match social media button hover color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    min-width: unset;
+    text-align: center;
+  }
+
+  .footer-title {
+    font-size: 1.1rem;
+  }
+
+  .footer-logo {
+    font-size: 1.8rem;
+  }
+}
+
+/* Contact Us Drawer Styles */
+.contact-drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-drawer {
+  width: 350px;
+  height: 100%;
+  background-color: #ffffff; /* Match footer background */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+  transform: translateX(100%);
+  animation: slideIn 0.3s forwards;
+  position: relative;
+  border-radius: 10px 0 0 10px; /* Match footer border-radius */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.contact-drawer h2 {
+  color: #ff4a00; /* Match footer title color */
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: "Saira", sans-serif; /* Match footer font */
+}
+.contact-drawer p {
+  color: #000000; /* Match footer text color */
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-family: "Saira", sans-serif; /* Match footer font */
+}
+
+.contact-drawer-input {
+  width: 93%;
+  height: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #444; /* Darker border to match footer */
+  border-radius: 5px;
+  margin-bottom: 20px;
+  resize: none;
+  background-color: #ffffff; /* Darker background for input */
+  color: #000000; /* Match footer text color */
+  font-family: "Saira", sans-serif; /* Match footer font */
+}
+
+.contact-drawer-input::placeholder {
+  color: #888; /* Placeholder color */
+}
+
+.contact-drawer-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4a00; /* Match footer accent color */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  font-family: "Saira", sans-serif; /* Match footer font */
+}
+
+.contact-drawer-button:hover {
+  background-color: #e04100; /* Darker shade for hover */
+}
+
+/* Close Icon Styles */
+.close-drawer-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000000; /* Match footer text color */
+  transition: color 0.3s ease;
+}
+
+.close-drawer-icon:hover {
+  color: #ff4a00; /* Match footer accent color */
+}

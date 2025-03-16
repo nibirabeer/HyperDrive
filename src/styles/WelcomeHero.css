@@ -1,0 +1,105 @@
+/* Welcome Hero Container */
+.welcome-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.welcome-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5f7;
+opacity: 0.4;
+background-image: radial-gradient(#000000 1.5px, #e5e5f7 1.5px);
+background-size: 30px 30px;
+  animation: gradientAnimation 10s ease infinite;
+  z-index: -1;
+}
+
+
+/* Content Styling */
+.welcome-hero-content {
+  max-width: 800px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.welcome-hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: fadeInDown 1.5s ease-out;
+  font-family: "Saira", sans-serif;
+}
+
+.highlight {
+  color: #ff4a00; /* Gold color for emphasis */
+}
+
+.welcome-hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.welcome-hero-button {
+  background-color: #ff4a00;
+  color: #ffffff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.welcome-hero-button:hover {
+  background-color: #ffb497;
+  transform: scale(1.05);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,76 @@
+
+.sub_heading {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Flexbox for horizontal alignment */
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers cards */
+  gap: 20px; /* Adds space between cards */
+  padding: 20px 0;
+  
+}
+
+/* Car Card Styling */
+.car-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  max-width: 350px; /* Ensures consistent card width */
+  text-align: center;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Car Image */
+.car-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Car Details */
+.car-details {
+  padding: 15px;
+}
+
+.car-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.car-price {
+  font-size: 1.2rem;
+  color: #ff4a00;
+  margin-bottom: 10px;
+}
+
+/* Book Now Button */
+.car-button {
+  background-color: #ff4a00;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.car-button:hover {
+  background-color: #d93e00;
+}

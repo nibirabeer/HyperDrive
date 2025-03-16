@@ -1,0 +1,168 @@
+/* General Container */
+.booking-management-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff; /* White background */
+}
+
+.booking-management-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #333333; /* Dark gray for heading */
+  font-weight: 400;
+}
+
+.booking-management-empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666666; /* Medium gray for empty state */
+}
+
+/* Booking List */
+.booking-management-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Booking Card */
+.booking-management-card {
+  background: #ffffff; /* White background */
+  border: 1px solid #dddddd; /* Light gray border */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.booking-management-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.booking-management-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.booking-management-card-details {
+  padding: 15px;
+}
+
+.booking-management-card-title {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  color: #333333; /* Dark gray for title */
+}
+
+.booking-management-card-user,
+.booking-management-card-date,
+.booking-management-card-time,
+.booking-management-card-duration,
+.booking-management-card-price {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #666666; /* Medium gray for details */
+}
+
+.booking-management-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Buttons */
+.booking-management-card-edit-button,
+.booking-management-card-delete-button,
+.booking-management-edit-save-button,
+.booking-management-edit-cancel-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.booking-management-card-edit-button {
+  background-color: #333333; /* Dark gray for edit button */
+  color: white;
+}
+
+.booking-management-card-edit-button:hover {
+  background-color: #000000; /* Black on hover */
+}
+
+.booking-management-card-delete-button {
+  background-color: #666666; /* Medium gray for delete button */
+  color: white;
+}
+
+.booking-management-card-delete-button:hover {
+  background-color: #333333; /* Dark gray on hover */
+}
+
+.booking-management-edit-save-button {
+  background-color: #333333; /* Dark gray for save button */
+  color: white;
+}
+
+.booking-management-edit-save-button:hover {
+  background-color: #000000; /* Black on hover */
+}
+
+.booking-management-edit-cancel-button {
+  background-color: #cccccc; /* Light gray for cancel button */
+  color: #333333; /* Dark gray text */
+}
+
+.booking-management-edit-cancel-button:hover {
+  background-color: #999999; /* Medium gray on hover */
+}
+
+/* Edit Form */
+.booking-management-edit-form {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f9f9f9; /* Light gray background */
+  border-radius: 8px;
+  border: 1px solid #dddddd; /* Light gray border */
+}
+
+.booking-management-edit-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333333; /* Dark gray for labels */
+}
+
+.booking-management-edit-input {
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #dddddd; /* Light gray border */
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark gray text */
+}
+
+.booking-management-edit-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-management-list {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-management-card {
+    margin-bottom: 20px;
+  }
+}
